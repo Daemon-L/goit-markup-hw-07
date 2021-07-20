@@ -1,0 +1,91 @@
+.team-section {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  
+    background-color: #f5f4fa;
+  }
+  
+  .team-person {
+    background-color: var(--primary-back-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  
+    border-radius: 0px 0px 4px 4px;
+// border-radius и тут и в team-item, скругления пропадают без одного из них
+  }
+  
+  .team-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+  
+    margin-bottom: 10px;
+  }
+  
+  .team-position {
+    margin-bottom: 16px;
+  }
+  
+  .team-list {
+    display: flex;
+    padding-left: 0px;
+  }
+  
+  .team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    //  и тут
+    margin-right: 30px;
+  }
+  
+  .team-item:last-of-type {
+    margin-right: 0px;
+  }
+  
+  .social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .social-list-link:hover .social-list-icon,
+  .social-list-link:focus .social-list-icon {
+    fill: var(--primary-back-color);
+  }
+
+//   Почему не вышло как на лекции ??? fill не меняет цвет иконки
+//   .social-list-link:hover,
+//   .social-list-link:focus {
+//   background-color: var(--accent-color);
+//   fill: var(--primary-back-color); }

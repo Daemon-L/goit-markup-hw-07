@@ -1,0 +1,38 @@
+.engage-section {
+    text-align: center;
+    padding-top: 47px;
+  }
+  
+  .engage-list {
+    display: flex;
+    padding-left: 0px;
+  }
+  
+  .engage-item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  
+  .engage-item {
+    position: relative;
+  }
+  
+  .picture {
+    display: block;
+  }
+  
+  .engage-desc {
+    color: var(--primary-back-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0;
+  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }

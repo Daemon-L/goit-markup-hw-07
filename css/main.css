@@ -41,6 +41,10 @@ p {
   color: var(--accent-color);
 }
 
+.links--active {
+  position: relative;
+}
+
 .links--active::after {
   content: "";
   display: block;
@@ -130,7 +134,7 @@ p {
   color: var(--accent-color);
 }
 
-.footer .logo {
+.logo--dark {
   color: var(--primary-back-color);
   margin-bottom: 20px;
 }
@@ -183,48 +187,36 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.header-section {
+.header .header--section {
   display: flex;
 }
 
-.navigation {
+.header .heder__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .heder__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav {
   display: flex;
   align-items: center;
 }
 
-.nav-list .links {
-  position: relative;
-}
-
-.nav-list {
+.nav .nav__list {
   display: flex;
   font-weight: 500;
 }
 
-.contacts-list {
+.contacts__list {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.links-heder {
-  display: flex;
-  align-items: center;
-  color: var(--primary-font-color);
-}
-
-.nav-item > .links,
-.contacts-item > .links {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.nav-item:not(:last-child),
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.icon-heder {
+.contacts__icon {
   margin-right: 10px;
   fill: var(--primary-font-color);
   transition-property: fill;
@@ -232,11 +224,17 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links-heder:hover .icon-heder {
+.contacts__links {
+  display: flex;
+  align-items: center;
+  color: var(--primary-font-color);
+}
+
+.contacts__links:hover .contacts__icon {
   fill: var(--accent-color);
 }
 
-.heroes-section {
+.heroes {
   background-color: var(--secondary-back-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/decoration/hero.jpg);
   background-position: center;
@@ -244,25 +242,23 @@ p {
   max-width: 1600px;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
-.heroes-title {
+.heroes__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--primary-back-color);
   text-transform: uppercase;
-  margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.heroes-button {
+.heroes__button {
   padding: 10px 32px;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-back-color);
@@ -270,8 +266,7 @@ p {
   border-width: 1px;
 }
 
-.heroes-section .heroes-button:hover,
-.heroes-section .heroes-button:focus {
+.heroes__button:hover, .heroes__button:focus {
   background-color: #188ce8;
 }
 
@@ -717,8 +712,7 @@ p {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-fields:hover,
-.modal-fields:focus {
+.modal-fields:hover, .modal-fields:focus {
   border-color: var(--accent-color);
 }
 
@@ -762,8 +756,7 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
+.modal-comment:hover, .modal-comment:focus {
   border-color: var(--accent-color);
 }
 
@@ -823,8 +816,7 @@ p {
   cursor: pointer;
 }
 
-.submit-button:hover,
-.submit-button:focus {
+.submit-button:hover, .submit-button:focus {
   background-color: #188ce8;
 }
 /*# sourceMappingURL=main.css.map */
